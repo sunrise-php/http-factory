@@ -1,7 +1,7 @@
 {
 	"name": "sunrise/http-factory",
 	"description": "Sunrise HTTP factory",
-	"keywords": ["fenric", "sunrise", "http-factory", "psr-17"],
+	"keywords": ["fenric", "sunrise", "http", "http-factory", "psr-17"],
 	"homepage": "https://github.com/sunrise-php/http-factory",
 	"license": "MIT",
 	"authors": [{
@@ -18,6 +18,9 @@
 	},
 	"require-dev": {
 		"phpunit/phpunit": "7.4.3"
+	},
+	"provide": {
+		"psr/http-factory-implementation": "1.0"
 	},
 	"autoload": {
 		"psr-4": {
