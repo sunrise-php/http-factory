@@ -1,6 +1,6 @@
 {
     "name": "sunrise/http-factory",
-    "description": "Sunrise HTTP factory",
+    "description": "Sunrise HTTP factory for PHP 7.1+ based on PSR-17",
     "keywords": ["fenric", "sunrise", "http", "http-factory", "psr-17"],
     "homepage": "https://github.com/sunrise-php/http-factory",
     "license": "MIT",
