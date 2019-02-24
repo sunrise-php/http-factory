@@ -4,11 +4,13 @@
     "keywords": ["fenric", "sunrise", "http", "http-factory", "psr-17"],
     "homepage": "https://github.com/sunrise-php/http-factory",
     "license": "MIT",
-    "authors": [{
-        "name": "Anatoly Fenric",
-        "email": "anatoly@fenric.ru",
-        "homepage": "https://anatoly.fenric.ru/"
-    }],
+    "authors": [
+        {
+            "name": "Anatoly Fenric",
+            "email": "anatoly@fenric.ru",
+            "homepage": "https://anatoly.fenric.ru/"
+        }
+    ],
     "require": {
         "php": "^7.1",
         "sunrise/http-message": "^1.0.9",
