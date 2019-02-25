@@ -8,7 +8,7 @@
 
 ## Installation
 
-```
+```bash
 composer require sunrise/http-factory
 ```
 
