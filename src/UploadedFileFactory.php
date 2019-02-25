@@ -20,4 +20,5 @@ use Sunrise\Http\ServerRequest\UploadedFileFactory as BaseUploadedFileFactory;
  * UploadedFileFactory
  */
 class UploadedFileFactory extends BaseUploadedFileFactory
-{}
+{
+}

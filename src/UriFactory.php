@@ -20,4 +20,5 @@ use Sunrise\Uri\UriFactory as BaseUriFactory;
  * UriFactory
  */
 class UriFactory extends BaseUriFactory
-{}
+{
+}

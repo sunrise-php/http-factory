@@ -20,4 +20,5 @@ use Sunrise\Http\Message\ResponseFactory as BaseResponseFactory;
  * ResponseFactory
  */
 class ResponseFactory extends BaseResponseFactory
-{}
+{
+}

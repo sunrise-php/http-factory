@@ -20,4 +20,5 @@ use Sunrise\Http\ServerRequest\ServerRequestFactory as BaseServerRequestFactory;
  * ServerRequestFactory
  */
 class ServerRequestFactory extends BaseServerRequestFactory
-{}
+{
+}

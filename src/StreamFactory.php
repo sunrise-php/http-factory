@@ -20,4 +20,5 @@ use Sunrise\Stream\StreamFactory as BaseStreamFactory;
  * StreamFactory
  */
 class StreamFactory extends BaseStreamFactory
-{}
+{
+}
