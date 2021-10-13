@@ -1,10 +1,13 @@
-## HTTP factory for PHP 7.1+ (incl. PHP 8) based on PSR-17
+# HTTP factory for PHP 7.1+ (incl. PHP 8) based on PSR-17
 
-[![Gitter](https://badges.gitter.im/sunrise-php/support.png)](https://gitter.im/sunrise-php/support)
-[![Build Status](https://scrutinizer-ci.com/g/sunrise-php/http-factory/badges/build.png?b=master)](https://scrutinizer-ci.com/g/sunrise-php/http-factory/build-status/master)
-[![Latest Stable Version](https://poser.pugx.org/sunrise/http-factory/v/stable)](https://packagist.org/packages/sunrise/http-factory)
-[![Total Downloads](https://poser.pugx.org/sunrise/http-factory/downloads)](https://packagist.org/packages/sunrise/http-factory)
-[![License](https://poser.pugx.org/sunrise/http-factory/license)](https://packagist.org/packages/sunrise/http-factory)
+[![Build Status](https://circleci.com/gh/sunrise-php/http-factory.svg?style=shield)](https://circleci.com/gh/sunrise-php/http-factory)
+[![Code Coverage](https://scrutinizer-ci.com/g/sunrise-php/http-factory/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/sunrise-php/http-factory/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sunrise-php/http-factory/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sunrise-php/http-factory/?branch=master)
+[![Total Downloads](https://poser.pugx.org/sunrise/http-factory/downloads?format=flat)](https://packagist.org/packages/sunrise/http-factory)
+[![Latest Stable Version](https://poser.pugx.org/sunrise/http-factory/v/stable?format=flat)](https://packagist.org/packages/sunrise/http-factory)
+[![License](https://poser.pugx.org/sunrise/http-factory/license?format=flat)](https://packagist.org/packages/sunrise/http-factory)
+
+---
 
 ## Installation
 
@@ -35,7 +38,7 @@ use Sunrise\Http\Factory\UriFactory;
 ## Test run
 
 ```bash
-php vendor/bin/phpunit
+composer test
 ```
 
 ## Useful links

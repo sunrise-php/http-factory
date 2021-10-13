@@ -1,7 +1,7 @@
 {
     "name": "sunrise/http-factory",
     "homepage": "https://github.com/sunrise-php/http-factory",
-    "description": "Sunrise HTTP factory for PHP 7.1+ based on PSR-17",
+    "description": "Sunrise // HTTP factory for PHP 7.1+ based on PSR-17",
     "license": "MIT",
     "keywords": [
         "fenric",
@@ -40,8 +40,12 @@
     },
     "scripts": {
         "test": [
-            "phpunit --colors=always --coverage-text",
-            "phpcs"
+            "phpcs",
+            "XDEBUG_MODE=coverage phpunit --coverage-text"
+        ],
+        "build": [
+            "phpdoc -d src/ -t phpdoc/",
+            "XDEBUG_MODE=coverage phpunit --coverage-html coverage/"
         ]
     }
 }
