@@ -45,6 +45,9 @@ class FactoryTest extends TestCase
         $this->assertInstanceOf(ResponseFactoryInterface::class, $factory);
     }
 
+    /**
+     * @return void
+     */
     public function testServerRequestFactory() : void
     {
         $factory = new ServerRequestFactory();
