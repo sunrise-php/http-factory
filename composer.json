@@ -21,7 +21,7 @@
     ],
     "require": {
         "php": "^7.1|^8.0",
-        "sunrise/http-message": "^1.4",
+        "sunrise/http-message": "^2.0",
         "sunrise/http-server-request": "^1.1",
         "sunrise/stream": "^1.2",
         "sunrise/uri": "^1.2"
