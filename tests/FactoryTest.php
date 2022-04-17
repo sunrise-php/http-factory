@@ -30,9 +30,7 @@ class FactoryTest extends TestCase
      */
     public function testRequestFactory() : void
     {
-        $factory = new RequestFactory();
-
-        $this->assertInstanceOf(RequestFactoryInterface::class, $factory);
+        $this->assertInstanceOf(RequestFactoryInterface::class, new RequestFactory());
     }
 
     /**
@@ -40,9 +38,7 @@ class FactoryTest extends TestCase
      */
     public function testResponseFactory() : void
     {
-        $factory = new ResponseFactory();
-
-        $this->assertInstanceOf(ResponseFactoryInterface::class, $factory);
+        $this->assertInstanceOf(ResponseFactoryInterface::class, new ResponseFactory());
     }
 
     /**
@@ -50,9 +46,7 @@ class FactoryTest extends TestCase
      */
     public function testServerRequestFactory() : void
     {
-        $factory = new ServerRequestFactory();
-
-        $this->assertInstanceOf(ServerRequestFactoryInterface::class, $factory);
+        $this->assertInstanceOf(ServerRequestFactoryInterface::class, new ServerRequestFactory());
     }
 
     /**
@@ -60,9 +54,7 @@ class FactoryTest extends TestCase
      */
     public function testStreamFactory() : void
     {
-        $factory = new StreamFactory();
-
-        $this->assertInstanceOf(StreamFactoryInterface::class, $factory);
+        $this->assertInstanceOf(StreamFactoryInterface::class, new StreamFactory());
     }
 
     /**
@@ -70,9 +62,7 @@ class FactoryTest extends TestCase
      */
     public function testUploadedFileFactory() : void
     {
-        $factory = new UploadedFileFactory();
-
-        $this->assertInstanceOf(UploadedFileFactoryInterface::class, $factory);
+        $this->assertInstanceOf(UploadedFileFactoryInterface::class, new UploadedFileFactory());
     }
 
     /**
@@ -80,8 +70,6 @@ class FactoryTest extends TestCase
      */
     public function testUriFactory() : void
     {
-        $factory = new UriFactory();
-
-        $this->assertInstanceOf(UriFactoryInterface::class, $factory);
+        $this->assertInstanceOf(UriFactoryInterface::class, new UriFactory());
     }
 }
