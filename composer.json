@@ -1,13 +1,14 @@
 {
     "name": "sunrise/http-factory",
     "homepage": "https://github.com/sunrise-php/http-factory",
-    "description": "Sunrise // HTTP factory for PHP 7.1+ based on PSR-17",
+    "description": "HTTP factory for PHP 7.1+ based on PSR-17",
     "license": "MIT",
     "keywords": [
         "fenric",
         "sunrise",
         "http",
-        "http-factory",
+        "factory",
+        "psr-7",
         "psr-17",
         "php7",
         "php8"
@@ -15,10 +16,13 @@
     "authors": [
         {
             "name": "Anatoly Fenric",
-            "email": "anatoly@fenric.ru",
-            "homepage": "https://anatoly.fenric.ru/"
+            "email": "afenric@gmail.com",
+            "homepage": "https://github.com/fenric"
         }
     ],
+    "provide": {
+        "psr/http-factory-implementation": "1.0"
+    },
     "require": {
         "php": "^7.1|^8.0",
         "sunrise/http-message": "^2.0",
@@ -30,9 +34,6 @@
         "phpunit/phpunit": "7.5.20|9.5.0",
         "sunrise/coding-standard": "1.0.0"
     },
-    "provide": {
-        "psr/http-factory-implementation": "1.0"
-    },
     "autoload": {
         "psr-4": {
             "Sunrise\\Http\\Factory\\": "src/"
@@ -41,6 +42,7 @@
     "scripts": {
         "test": [
             "phpcs",
+            "psalm",
             "XDEBUG_MODE=coverage phpunit --coverage-text --colors=always"
         ],
         "build": [
