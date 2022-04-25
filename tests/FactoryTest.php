@@ -1,75 +1,58 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace Sunrise\Http\Factory\Tests;
 
-/**
- * Import classes
- */
 use PHPUnit\Framework\TestCase;
-use Psr\Http\Message\RequestFactoryInterface;
-use Psr\Http\Message\ResponseFactoryInterface;
-use Psr\Http\Message\ServerRequestFactoryInterface;
-use Psr\Http\Message\StreamFactoryInterface;
-use Psr\Http\Message\UploadedFileFactoryInterface;
-use Psr\Http\Message\UriFactoryInterface;
-use Sunrise\Http\Factory\RequestFactory;
-use Sunrise\Http\Factory\ResponseFactory;
-use Sunrise\Http\Factory\ServerRequestFactory;
-use Sunrise\Http\Factory\StreamFactory;
-use Sunrise\Http\Factory\UploadedFileFactory;
-use Sunrise\Http\Factory\UriFactory;
 
-/**
- * FactoryTest
- */
 class FactoryTest extends TestCase
 {
-
-    /**
-     * @return void
-     */
     public function testRequestFactory() : void
     {
-        $this->assertInstanceOf(RequestFactoryInterface::class, new RequestFactory());
+        $this->assertInstanceOf(
+            \Sunrise\Http\Message\RequestFactory::class,
+            new \Sunrise\Http\Factory\RequestFactory()
+        );
     }
 
-    /**
-     * @return void
-     */
     public function testResponseFactory() : void
     {
-        $this->assertInstanceOf(ResponseFactoryInterface::class, new ResponseFactory());
+        $this->assertInstanceOf(
+            \Sunrise\Http\Message\ResponseFactory::class,
+            new \Sunrise\Http\Factory\ResponseFactory()
+        );
     }
 
-    /**
-     * @return void
-     */
     public function testServerRequestFactory() : void
     {
-        $this->assertInstanceOf(ServerRequestFactoryInterface::class, new ServerRequestFactory());
+        $this->assertInstanceOf(
+            \Sunrise\Http\ServerRequest\ServerRequestFactory::class,
+            new \Sunrise\Http\Factory\ServerRequestFactory()
+        );
     }
 
-    /**
-     * @return void
-     */
     public function testStreamFactory() : void
     {
-        $this->assertInstanceOf(StreamFactoryInterface::class, new StreamFactory());
+        $this->assertInstanceOf(
+            \Sunrise\Stream\StreamFactory::class,
+            new \Sunrise\Http\Factory\StreamFactory()
+        );
     }
 
-    /**
-     * @return void
-     */
     public function testUploadedFileFactory() : void
     {
-        $this->assertInstanceOf(UploadedFileFactoryInterface::class, new UploadedFileFactory());
+        $this->assertInstanceOf(
+            \Sunrise\Http\ServerRequest\UploadedFileFactory::class,
+            new \Sunrise\Http\Factory\UploadedFileFactory()
+        );
     }
 
-    /**
-     * @return void
-     */
     public function testUriFactory() : void
     {
-        $this->assertInstanceOf(UriFactoryInterface::class, new UriFactory());
+        $this->assertInstanceOf(
+            \Sunrise\Uri\UriFactory::class,
+            new \Sunrise\Http\Factory\UriFactory()
+        );
     }
 }
